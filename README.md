@@ -9,7 +9,7 @@
 
 #### Anggota
 - Ananda Rizky Setya Nugroho
-- Asil
+- Asiil Nasywa Rabbani
 - Andi Nurkholis (Dosen)
 
 # Project Guide Laravel
