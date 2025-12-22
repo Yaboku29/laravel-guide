@@ -8,13 +8,11 @@
 </p> -->
 
 #### Anggota
+- Andi Nurkholis (Dosen)
 - Ananda Rizky Setya Nugroho
 - Asiil Nasywa Rabbani
-- Andi Nurkholis (Dosen)
 
 # Project Guide Laravel
-
-
 Project ini bertujuan sebagai pemandu atau <i>guide</i> untuk mereka yang igin mempelajari <b>Framework LARAVEL</b>. <br>
 
 Project ini akan berisi apa saja saja yang dijelaskan di dalam dokumentasi laravel yang bisa dipahami lebih mudah oleh orang awam atau yang baru memulai mencoba laravel/ <br>
