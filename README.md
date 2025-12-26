@@ -48,7 +48,7 @@ Jika belum ada aplikasi Composer, lanjutkan dengan langkah-langkah berikut :
 7. Jika sudah coba di cek lewat CMD dengan command "composer -v" seperti di atas tadi
 
 ### Instalasi Laravel
-1. Buka CMD dan berpindah ke folder yang ingin dibuat sebagai project Laravel. **Biar mudah tinggal ke file explorer -> cari folder yang ingin dijadikan folder project -> masuk folder itu -> tekan bagian yang ada "home > nama folder > dst..." lalu ketikkan CMD.**
+1. Buka CMD dan berpindah ke folder yang ingin dibuat sebagai project Laravel. **Biar mudah tinggal ke file explorer -> cari folder yang ingin dijadikan folder project -> masuk folder itu -> tekan bagian yang ada "home > nama folder > dst..." atau sejenisnya lalu ketikkan CMD.**
 2. Kalau CMD sudah di folder project, ketik "composer create-project laravel/laravel (nama project)
 ```bash
 composer create-project laravek/laravel (nama project)
