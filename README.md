@@ -20,10 +20,9 @@ Project ini akan berisi apa saja saja yang dijelaskan di dalam dokumentasi larav
 # DAFTAR ISI
 - [Penjelasan Project](#project-guide-laravel)
 - [Daftar Isi](#daftar-isi)
-- [Instalasi Laravel](#instalasi-laravel)
 - [Pengantar dan Instalasi](#pengantar-dan-instalasi)
 - [Instalasi Composer](#instalasi-composer)
-- []()
+- [Instalasi Laravel](#instalasi-laravel)
 
 ## Pengantar dan Instalasi
 Dalam instalasi framework Laravel, ada beberapa tahapan yang perlu diperhatikan. <br> 
@@ -34,12 +33,21 @@ Dalam instalasi framework Laravel, ada beberapa tahapan yang perlu diperhatikan.
 
 ### Instalasi Composer
 Sebelum masuk ke Cara Install Composer, alangkah baiknya diketahui dulu apa saja kegunaan dari composer. Composer adalah dependency manager pada PHP yang merupakan tool untuk manajemen library-library PHP yang dibutuhkan dalam pembuatan web, yang telah banyak dilakukan pengembangan oleh developer lainnya yang tergabung dalam komunitas packagist.org. Singkatnya, dengan menggunakan composer, library-library PHP yang tersedia di packagist.org akan lebih mudah dikelola dan saling diintegrasikan. Sehingga, secara tidak langsung membuat codingan atau source code project menjadi lebih rapi dan terstruktur. <br>
-Cek terlebih dahulu apakah di komputer Anda sudah menginstal Composer atau belum. Bisa cek dengan masuk ke Command Prompt dan ketikkan: <br>
+Cek terlebih dahulu apakah di komputer Anda sudah menginstal Composer atau belum. Bisa cek dengan masuk ke Command Prompt dan ketikkan:
 
 ```bash
 composer --version
 ```
+Jika belum ada aplikasi Composer, lanjutkan dengan langkah-langkah berikut :
+1. Sebelum instal Composer, cek dahulu apakah sudah ada XAMPP atau sejenisnya. Jika belum ada, instal terlebih dahulu. (XAMPP atau paketan lain digunakan untuk mendapatkan PHP. Memilih XAMPP agar paket lengkap aja semisal membutuhkan yang lain dan bisa memakai XAMPP)
+2. Kunjungi laman Composer [Laman Composer](https://getcomposer.org/download/)
+3. JIka sudah selesai mendownload Composer, akses file yang sudah didownload tadi.
+4. Tekan "Next" aja dan biarkan pengaturan default.
+5. Jika sudah sampai bagian "Choose command-line PHP you want to use", pilih folder "C:\xampp\php\php.exe" atau tergantung dengan format file/folder/tempat PPHP di komputer mu
+6. Jika sudah, tekan "Next" sampai ada tombol "Install." Dan kemudian tekan "Install," lalu tunggu selesai.
+7. Jika sudah coba di cek lewat CMD dengan command "composer -v" seperti di atas tadi
 
+### Instalasi Laravel
 <!-- Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
