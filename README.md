@@ -17,6 +17,14 @@ Project ini bertujuan sebagai pemandu atau <i>guide</i> untuk mereka yang igin m
 
 Project ini akan berisi apa saja saja yang dijelaskan di dalam dokumentasi laravel yang bisa dipahami lebih mudah oleh orang awam atau yang baru memulai mencoba laravel <br>
 
+# DAFTAR ISI
+- [Penjelasan Project](#project-guide-laravel)
+- [Daftar Isi](#daftar-isi)
+- [Instalasi Laravel](#instalasi-laravel)
+- [Pengantar dan Instalasi](#pengantar-dan-instalasi)
+- [Instalasi Composer](#instalasi-composer)
+- []()
+
 ## Instalasi Laravel
 ### Pengantar dan Instalasi
 Dalam instalasi framework Laravel, ada beberapa tahapan yang perlu diperhatikan. <br> 
