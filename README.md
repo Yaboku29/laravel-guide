@@ -28,8 +28,7 @@ Dalam instalasi framework Laravel, ada beberapa tahapan yang perlu diperhatikan.
 Sebelum masuk ke Cara Install Composer, alangkah baiknya diketahui dulu apa saja kegunaan dari composer. Composer adalah dependency manager pada PHP yang merupakan tool untuk manajemen library-library PHP yang dibutuhkan dalam pembuatan web, yang telah banyak dilakukan pengembangan oleh developer lainnya yang tergabung dalam komunitas packagist.org. Singkatnya, dengan menggunakan composer, library-library PHP yang tersedia di packagist.org akan lebih mudah dikelola dan saling diintegrasikan. Sehingga, secara tidak langsung membuat codingan atau source code project menjadi lebih rapi dan terstruktur. <br>
 Cek terlebih dahulu apakah di komputer Anda sudah menginstal Composer atau belum. Bisa cek dengan masuk ke Command Prompt dan ketikkan: <br>
 ```bash
-composer --version
-```
+composer --version```
 
 <!-- Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
