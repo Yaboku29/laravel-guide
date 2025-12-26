@@ -43,7 +43,7 @@ Jika belum ada aplikasi Composer, lanjutkan dengan langkah-langkah berikut :
 2. Kunjungi laman [Composer](https://getcomposer.org/download/)
 3. JIka sudah selesai mendownload Composer, akses file yang sudah didownload tadi.
 4. Tekan "Next" aja dan biarkan pengaturan default.
-5. Jika sudah sampai bagian "Choose command-line PHP you want to use", pilih folder "C:\xampp\php\php.exe" atau tergantung dengan format file/folder/tempat PPHP di komputer mu
+5. Jika sudah sampai bagian "Choose command-line PHP you want to use", pilih folder "C:\xampp\php\php.exe" atau tergantung dengan format file/folder/tempat PHP di komputermu
 6. Jika sudah, tekan "Next" sampai ada tombol "Install." Dan kemudian tekan "Install," lalu tunggu selesai.
 7. Jika sudah coba di cek lewat CMD dengan command "composer -v" seperti di atas tadi
 
