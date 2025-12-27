@@ -23,6 +23,11 @@ Project ini akan berisi apa saja saja yang dijelaskan di dalam dokumentasi larav
 - [Pengantar dan Instalasi](#pengantar-dan-instalasi)
 - [Instalasi Composer](#instalasi-composer)
 - [Instalasi Laravel](#instalasi-laravel)
+- [Struktur Laravel](#strujtur-laravel)
+- [Route, Views, dan Controller](#route-view-dan-controller)
+- [Routes](#route)
+- [Views](#view)
+- [Controller](#controller)
 
 ## Pengantar dan Instalasi
 Dalam instalasi framework Laravel, ada beberapa tahapan yang perlu diperhatikan. <br> 
@@ -68,6 +73,61 @@ Jika muncul
 http://127.0.0.1:8000
 ```
 maka sudah berhasil untuk instalasi Laravel
+### Struktur Laravel
+1. App, berisikan file kode logic dari aplikasi
+2. Bootstrap, berisikan file bootstrap
+3. Config, berisikan file konfigurasi aplikasi
+4. Database, berisikan file pendukung operasi database
+5.	Public, berisikan file asset pendukung yang digunakan oleh user
+6.	Resources, berisikan file yang terkait dengan visualisasi tampilan aplikasi
+7.	Routes, berisikan file pemetaan url aplikasi
+8.	Storage, berisikan file yang dapat digunakan sebagai tempat unggah file
+9.	Tests, berisikan file yang dapat digunakan uji terhadap aplikasi
+10.	Vendor, berisikan library yang telah disediakan oleh Laravel
+
+## Route, View, dan Controller
+### Route
+Route dan view adalah elemen paling dasar yang harus dipahami dalam menggunakan Laravel. Route jika diartikan ke dalam bahasa indonesia, maka artinya adalah rute atau jalur. Sehingga, dapat diambil kesimpulannya bahwa route pada laravel adalah bagian yang mengatur rute pada project aplikasi yang hendak dikembangkan. Sebagai contoh, ketika ingin mengatur rute URL untuk menampilkan konten blog dengan membuat route “blog”, kemudian mengarahkan aplikasi untuk menjalankan controller ataupun view yang berisi konten blog pada saat mengakses route tersebut.
+Contoh route (biasanya ada di folder routes):
+```bash
+Route::get('/', function () {
+    return view('welcome');
+});
+```
+
+### View
+View merupakan elemen yang berfungsi untuk menangani bagian tampilan/interface suatu halaman pada framework laravel. Dimana, segala sesuatu yang berkaitan dengan tampilan aplikasi web akan dibuat/manajemen dalam folder rewource/view.
+```php
+// "resources/views/coba.blade.php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    WELCOME
+</body>
+</html>
+```
+Lalu tambahkan route agar bisa akses view yang telah dibuat dengan
+```php
+// routes/web.php
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// Kita tambahkan route baru di bawahnya 
+Route::get('coba',function(){
+    return view('coba');
+});
+```
+### Controller
 <!-- Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
