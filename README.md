@@ -98,7 +98,7 @@ Route::get('/', function () {
 ### View
 View merupakan elemen yang berfungsi untuk menangani bagian tampilan/interface suatu halaman pada framework laravel. Dimana, segala sesuatu yang berkaitan dengan tampilan aplikasi web akan dibuat/manajemen dalam folder rewource/view.
 ```php
-// "resources/views/coba.blade.php
+// resources/views/coba.blade.php
 <!DOCTYPE html>
 <html lang="en">
 <head>
