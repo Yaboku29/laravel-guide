@@ -33,7 +33,7 @@ Project ini akan berisi apa saja saja yang dijelaskan di dalam dokumentasi larav
 Dalam instalasi framework Laravel, ada beberapa tahapan yang perlu diperhatikan. <br> 
 1) Pastikan terlebih dahulu, telah menginstal XAMPP ataupun aplikasi sejenis web server lainnya, diharapkan dapat menginstal versi terbaru agar mendapatkan versi PHP terbaru.
 2) Lakukan instalasi terhadap aplikasi composer terlebih dahulu untuk dapat menginstal dan menggunakan Laravel dengan lebih mudah nantinya.
-3) Terakhir, lakukan instalasi Laravel menggunakan bantuan composer pada terminal CMD, yang file-file instalasi nya dapat diarahkan/diletakkan dalam folder htdocs pada XAMPP.
+3) Terakhir, lakukan instalasi Laravel menggunakan bantuan composer pada terminal CMD, yang file-file instalasi nya dapat diarahkan/diletakkan dalam folder yang diinginkan dijadikan folder project.
 <br>
 
 ### Instalasi Composer
