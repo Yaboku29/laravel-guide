@@ -129,6 +129,7 @@ Route::get('coba',function(){
 ```
 ### Controller
 Controller merupakan jembatan atau penghubung antara view dan model. Sederhananya, controller dapat dipahami sebagai pengatur view dan model, serta juga dapat berperan sebagai pengolah data. File controller laravel terdapat dalam folder App/Http/Controllers/.
+
 // make controller
 ```php
 C:\laravel_project\test>php artisan make:controller UserController
@@ -161,36 +162,7 @@ use App\Http\Controllers\UserController;
 Route::get('/user/{id}',[UserController::class, 'show']);
 ```
 ketika permintaan cocok dengan rute URL, metode 'show' pada kelas App\Http\Controllers\UserController akan dipanggil dan parameter rute akan diteruskan ke metode tersebut.
-C:\laravel_project\test>php artisan make:controller UserController
-```
-controller dapat memiliki sejumlah metode public yang akan merespon permintaan HTTP yang masuk:
-```php
-<?php
-namespace App\Http\Controllers;
 
-use App\Models\User;
-user Illuminate\View\View;
-
-class UserController extends Controller
-{
-    /**
-     * tampilkan profil pengguna yang diberikan
-     */
-    public function show(string $id): View
-    {
-        return view('user.profile', [
-            'user' =>User::findorFail($id)
-        ]);
-    }
-}
-```
-setelah menulis kelas dan metode controller, definisikan rute ke metode controller:
-```php
-use App\Http\Controllers\UserController;
-
-Route::get('/user/{id}',[UserController::class, 'show']);
-```
-ketika permintaan cocok dengan rute URL, metode 'show' pada kelas App\Http\Controllers\UserController akan dipanggil dan parameter rute akan diteruskan ke metode tersebut.
 <!-- Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
