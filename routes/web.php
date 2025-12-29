@@ -12,5 +12,7 @@ Route::get('coba',function(){
     return view('coba');
 });
 
+// route yang dipakai dalam testing Controller dan Passing Data
 Route::get('/user/{id}',[UserController::class, 'show']);
+// route yang dipakai dalam testing Controller
 Route::get('/user/',[UserController::class, 'test']);

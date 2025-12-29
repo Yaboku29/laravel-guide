@@ -28,6 +28,11 @@ Project ini akan berisi apa saja saja yang dijelaskan di dalam dokumentasi larav
 - [Routes](#route)
 - [Views](#view)
 - [Controller](#controller)
+- [Jenis Controller](#jenis-controller)
+- [Passing dan Request Data](#passing-and-request-data)
+- [Passing Data](#passing-data)
+- [Request Data](#request-data)
+
 
 ## Pengantar dan Instalasi
 Dalam instalasi framework Laravel, ada beberapa tahapan yang perlu diperhatikan. <br> 
@@ -130,8 +135,8 @@ Route::get('coba',function(){
 ### Controller
 Controller merupakan jembatan atau penghubung antara view dan model. Sederhananya, controller dapat dipahami sebagai pengatur view dan model, serta juga dapat berperan sebagai pengolah data. File controller laravel terdapat dalam folder App/Http/Controllers/.
 
-// make controller
 ```php
+// make controller
 C:\laravel_project\test>php artisan make:controller UserController
 ```
 controller dapat memiliki sejumlah metode public yang akan merespon permintaan HTTP yang masuk:
@@ -165,6 +170,27 @@ ketika permintaan cocok dengan rute URL, metode 'show' pada kelas App\Http\Contr
 
 Sebagai tambahan, jika memakai VSCode dan menginstal extension "PHP Intelephense", maka cukup mengetik nama Controllernya saja agar muncul "use ..." di web.php-nya.
 
+### Jenis Controller
+Ketimbang disebut Jenis Controller, sebenarnya lebih cocok disebut "Jenis Flag Controller."
+Dalam pembuatan/mkae/generate Controller dari Laravel menyediakan beberapa Flag yang bertujuan memenuhi kebutuhan Pengembang/Dev.
+Berikut adalah jenis-jenis Flagnya
+#### 1. Writing Controller
+##### a. Basic Controller
+##### b. Single Action (Invokable) Controller
+#### 2. Resource Controller
+##### a. Model
+##### b. Request
+##### c. API
+## Passing and Request Data
+### Passing Data
+Pada sub bab ini, akan dibahas teknik passing data pada laravel. Passing data adalah proses mengoper data, dimana data yang dioper adalah data yang ada pada controller ke view untuk ditampilkan. Salah satu cara yang dapat digunakan untuk mempassing atau oper data ke view pada laravel adalah dengan mengirim data dalam parameter ke 2 pada fungsi view().
+Berikut contoh sederhana untuk melakukan passing data:
+1.	Memakai Controller(UserController.php) dan Route yang sudah dibuat di web.php, usahakan sudah membuat terlebih dahulu.
+2. Hidupkan server Laravel **(php artisan serve)** 
+3. Masuk ke web dan tambahkan "/user/(id)". Langsung ID tidak perlu tanda kurungnya
+4. Jika sudah benar cara penulisannya, maka akan muncul tulisan "Welcome, (ID)"
+
+### Request Data
 <!-- Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).

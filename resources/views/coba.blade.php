@@ -1,3 +1,7 @@
+<!-- 
+blading template yang dipakai untuk testing Route, View, dan Controller 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +10,6 @@
     <title>Document</title>
 </head>
 <body>
-    WELCOME
+    WELCOME, {{ $userID }}
 </body>
 </html>
