@@ -191,6 +191,40 @@ Berikut contoh sederhana untuk melakukan passing data:
 4. Jika sudah benar cara penulisannya, maka akan muncul tulisan "Welcome, (ID)"
 
 ### Request Data
+Pada pemrograman PHP native, terdapat variabel superglobal GET dan POST untuk menerima atau menangkap data yang biasa disebut request. Pada Laravel konsep request ini lebih disederhanakan melalui kelas Illuminate\Http\Request yang menyediakan cara berorientasi objek untuk berinteraksi dengan permintaan HTTP saat ini yang sedang diproses oleh aplikasi Anda, serta mengambil input, cookie, dan file yang dikirimkan bersama permintaan tersebut. Ada 2 proses request atau penerimaan data pada Laravel, yaitu via URI dan Input.
+
+**Permintaan Data Melalui URL**
+
+Berikut adalah langkah sederhana teknik penerimaan data dari url:
+1. Membuat file controller baru, dengan membuka terminal CMD, kemudian
+arahkan ke folder aplikasi Laravel, misalnya disini laravel_blog menggunakan
+perintah cd
+2. Buka file UserController yang telah dibuat (terdapat dalam folder
+app/Http/Controller), kemudian modifikasi isian pada function index dengan
+menambahkan parameter “$nama”, yang selanjutnya dilakukan return.
+3. Selanjutnya, buka file route pada web.php yang terdapat dalam folder routes, kemudian buat route baru “user/{nama}” yang mengarah pada function index
+di UserController, dengan menambahkan data “{nama}” pada url-nya.
+4. Terakhir, akses tampilan user yang telah dibuat dengan mengetikkan url
+dengan memasukkan suatu string diakhir setelah “localhost:8000/user/”, contohnya “localhost:8000/user/anonymus”.
+
+**Permintaan Data Dari Input**
+
+Salah satu mekanisme yang banyak digunakan di web adalah menangkap data dari form input menggunakan form method post. Ini sering digunakan untuk memasukkan data ke dalam database dari inputan form. Berikut adalah pembahasan tentang percobaan membuat form input, kemudian melakukan request data berdasarkan inputannya. Langkah-langkahnya dapat dilakukan sebagai berikut:
+1. Buka kembali file UserController (terdapat dalam folder app/Http/Controller), kemudian modifikasi isian pada function create dengan menambahkan return
+view untuk menampilkan suatu halaman pada folder “resources/views”.
+2. Membuat file form.blade.php. Pada contoh berikut, form.blade.php dibuat dalam folder terpisah, yakni “user” agar dibedakan dengan file tampilan lainnya.
+3. Selanjutnya, perlu mengisi sintaks html pada file form.blade.php
+4. Selanjutnya, perlu dibuat route baru untuk mengatur function create dan
+tampilan yang telah dibuat sebelumnya agar bisa diakses.
+5. Berikutnya, setelah dapat menampilkan
+form input yang telah dibuat, perlu dibuat function yang dapat menampung
+data yang akan dimasukkan. Pada UserController yang telah dibuat, telah
+disediakan function yang dapat menghandle request data (dapat juga
+membuatnya sendiri).
+6. Selanjutnya, perlu didefinisikan lagi route untuk menjalankan function store
+yang telah dimodifikasi sebelumnya.
+7. Terakhir, akan dilakukan percobaan function store pada UserController yang
+dimulai dari mengakses form input melalui uri “localhost:8000/user/create”.
 <!-- Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
