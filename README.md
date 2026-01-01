@@ -23,7 +23,7 @@ Project ini akan berisi apa saja saja yang dijelaskan di dalam dokumentasi larav
 - [Pengantar dan Instalasi](#pengantar-dan-instalasi)
 - [Instalasi Composer](#instalasi-composer)
 - [Instalasi Laravel](#instalasi-laravel)
-- [Struktur Laravel](#strujtur-laravel)
+- [Struktur Laravel](#struktur-laravel)
 - [Route, Views, dan Controller](#route-view-dan-controller)
 - [Routes](#route)
 - [Views](#view)
@@ -32,6 +32,43 @@ Project ini akan berisi apa saja saja yang dijelaskan di dalam dokumentasi larav
 - [Passing dan Request Data](#passing-and-request-data)
 - [Passing Data](#passing-data)
 - [Request Data](#request-data)
+- [Framework Bootstrap](#framework-bootstrap)
+- [Instalasi Bootstrap](#instalasi)
+- [Container](#container)
+- [Grid System](#grid-system)
+- [Navbar](#navbar)
+- [Dropdown](#dropdown)
+- [Card](#card)
+- [Carousel](#carousel)
+- [Form](#form)
+- [Blading Template](#blading-template)
+- [Persiapan Template Bootstrap](#persiapan-template-bootstrap)
+- [Pembuatan Master Layout](#pembuatan-master-layout)
+- [Penggabungan Tampilan Akhir](#penggabungan-tampilan-akhir)
+- [Database, Model, dan Eloquent](#database-model-dan-eloquent)
+- [Database](#database)
+- [Model](#model)
+- [Eloquent](#eloquent)
+- [Create, Read, Update, dan Delete](#create-read-update-dan-delete)
+- [Create](#create)
+- [Read](#read)
+- [Update](#update)
+- [Delete](#delete)
+- [Laravel File](#laravel-file)
+- [Create](#create-1)
+- [Read](#read-1)
+- [Update](#update-1)
+- [Delete](#delete-1)
+- [JavaScript](#javascript)
+- [Asynchronous JavaScript and XML](#asynchronous-javascript-and-xml)
+- [jQuery Form Validation](#jquery-form-validation)
+- [SweetAlert2, DataTables, dan WYSIWYG API](#sweetalert2-datatables-dan-wysiwyg-api)
+- [SweetAlert2](#sweetalert2-api)
+- [DataTables API](#datatables-api)
+- [WYSIWYG API](#wysiwyg-api)
+- [Autentikasi dan Otorisasi](#autentikasi-dan-otorisasi)
+- [Autentikasi](#autentikasi)
+- [Otorisasi](#otorisasi)
 
 
 ## Pengantar dan Instalasi
@@ -225,6 +262,51 @@ membuatnya sendiri).
 yang telah dimodifikasi sebelumnya.
 7. Terakhir, akan dilakukan percobaan function store pada UserController yang
 dimulai dari mengakses form input melalui uri “localhost:8000/user/create”.
+## Framework Bootstrap 
+### Instalasi
+### Container
+### Grid System
+### Navbar
+### Dropdown
+### Card
+### Carousel
+### Form
+
+## Blading Template
+### Persiapan Template Bootstrap
+### Pembuatan Master Layout
+### Penggabungan Tampilan Akhir
+
+## Database, Model, dan Eloquent
+### Database
+### Model
+### Eloquent
+
+## Create, Read, Update, dan Delete
+### Create
+### Read
+### Update
+### Delete
+
+## Laravel File
+### Create 
+### Read
+### Update
+### Delete
+
+## JavaScript
+### Asynchronous JavaScript and XML
+### jQuery Form Validation
+
+## SweetAlert2, DataTables, dan WYSIWYG API
+### SweetAlert2 API
+### DataTables API
+### WYSIWYG API
+
+## Autentikasi dan Otorisasi
+### Autentikasi
+### Otorisasi
+
 <!-- Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
